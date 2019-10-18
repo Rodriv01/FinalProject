@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            @Styles.Render("~/Content/logincss")
+            @Scripts.Render("~/bundles/modernizr")
+        </head>
+        <body>
+            <div class="container">
+                <div class="wrapper">
+                    <form onsubmit="" name="Login_Form" class="form-signin">
+                        <h3 class="form-signin-heading">Inicia Sesion</h3>
+                        <hr class="colorgraph"><br>
+                        <input type="text" class="form-control" id="Ci" placeholder="Carnet de Identidad" required="" autofocus="" />
+                        <a class="btn btn-primary btn-block" name="Submit" value="Login" type="Submit" href="@Url.Action("Index", "Home")">
+                            <h4>Iniciar Sesion</h4>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </body>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/loginjs")
+    </html>
